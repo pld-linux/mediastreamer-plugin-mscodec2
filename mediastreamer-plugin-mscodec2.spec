@@ -2,7 +2,7 @@ Summary:	Codec2 audio codec for mediastreamer
 Summary(pl.UTF-8):	Kodek dźwięku Codec2 dla mediastreamera
 Name:		mediastreamer-plugin-mscodec2
 Version:	1.0
-Release:	2
+Release:	3
 License:	GPL v2+
 Group:		Libraries
 #Source0Download: https://gitlab.linphone.org/BC/public/mscodec2/-/tags
@@ -38,6 +38,7 @@ Ten pakiet udostępnia wtyczkę mediastreamera do kodeka dźwięku Codec2.
 %{__autoheader}
 %{__automake}
 %configure \
+	--disable-silent-rules \
 	--disable-static
 
 %{__make}
